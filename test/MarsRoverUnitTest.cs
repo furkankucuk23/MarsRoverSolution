@@ -24,17 +24,17 @@ namespace MarsRoverTest
         }
 
         [Fact]
-        public void When_MaxCoordinate55_StartCoordinate12N_StepsLMLMLMLMM_ShouldReturn13N2()
+        public void When_MaxCoordinate55_StartCoordinate12N_StepsLMLMLMLMMMM_ShouldReturn15N()
         {
             var maxCoordinate = new List<short>() { 5, 5 };
             var startCoordinate = new string[] { "1", "2", "N" };
-            var steps = "LMLMLMLMM";
+            var steps = "LMLMLMLMMMM";
 
             var direction = new RoverPosition(startCoordinate, steps, maxCoordinate);
             var result = direction.Move();
 
-            Assert.Equal(2, result.X);
-            Assert.Equal(3, result.Y);
+            Assert.Equal(1, result.X);
+            Assert.Equal(5, result.Y);
             Assert.Equal(CompassPoint.N, result.Direction);
         }
     }
