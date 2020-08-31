@@ -8,4 +8,4 @@ Mars Rover
 Mars Rover Unit Test
 
 1- Bu test projemizde 2 adet birim testi bulunmaktadýr.
-1- Ýki test de verilen girdilere göre çýktýlarýn kontrolünü yapmaktadýr.
+2- Ýki test de verilen girdilere göre çýktýlarýn kontrolünü yapmaktadýr.
